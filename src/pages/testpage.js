@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import styles from './blog.module.css'
 import ArticlePreview from '../components/article-preview'
 
-class BlogIndex extends React.Component {
+class TestPageIndex extends React.Component {
     render() {
         const siteTitle = get(this, 'props.data.site.siteMetadata.title')
         const posts = get(this, 'props.data.allContentfulBlogPost.edges')
@@ -14,7 +14,7 @@ class BlogIndex extends React.Component {
             <div style={{ background: '#fff' }}>
                 <Helmet title={siteTitle} />
                 <div className={styles.hero}>
-                    Blog
+                    Test Page
                 </div>
                 <div className="wrapper">
                     <h2 className="section-headline">Recent articles</h2>
@@ -33,10 +33,10 @@ class BlogIndex extends React.Component {
     }
 }
 
-export default BlogIndex
+export default TestPageIndex
 
 export const pageQuery = graphql`
-  query BlogIndexQuery {
+  query TestIndexQuery {
     allContentfulBlogPost(sort: { fields: [publishDate], order: DESC }) {
       edges {
         node {
