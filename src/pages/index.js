@@ -6,9 +6,9 @@ import ArticlePreview from '../components/article-preview'
 
 class RootIndex extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allContentfulBlogPost.edges')
-    const [author] = get(this, 'props.data.allContentfulPerson.edges')
+    const siteTitle = get(this, 'props.data.site.siteMetadata.title');
+    const posts = get(this, 'props.data.allContentfulBlogPost.edges');
+    const [author] = get(this, 'props.data.allContentfulPerson.edges');
     console.log([author]);
 
     return (

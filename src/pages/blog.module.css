@@ -8,3 +8,10 @@
   font-size: 2em;
   overflow: hidden;
 }
+
+pre {
+  overflow-x: scroll;
+  padding: 20px;
+  background: #eee;
+  color: #e40000;
+}
